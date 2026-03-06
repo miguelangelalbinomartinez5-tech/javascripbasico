@@ -107,6 +107,10 @@ function validarContraseña(password) {
 	// De lo contrario, devuelve false.
 	// Pista: Usa métodos de string como .length, .includes(), o expresiones regulares simples.
 	// Tu código: 
+	if (password.length < 8) return false;
+	if (!/[A-Z]/.test(password)) return false;
+	if (!/[0-9]/.test(password)) return false;
+	return true;
 }
 
 // Test 7:
@@ -119,6 +123,11 @@ function calcularIMC(peso, altura) {
 	// - 25 <= IMC < 30 → "Sobrepeso"
 	// - IMC >= 30 → "Obesidad"
 	// Tu código:
+	const imc = peso / (altura * altura);
+	if (imc < 18.5) return "Bajo peso";
+	if (imc < 25) return "Peso normal";
+	if (imc < 30) return "Sobrepeso";
+	return "Obesidad"
 }
 
 // Test 8:
@@ -139,6 +148,7 @@ function obtenerEstacion(mes) {
 	// - Septiembre, Octubre, Noviembre → "Otoño"
 	// Si el mes no es válido, devuelve "Mes inválido"
 	// Tu código:
+	
 }
 
 // Test 10:
