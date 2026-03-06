@@ -136,6 +136,8 @@ function esMultiplo(num1, num2) {
 	// Devuelve true si num1 es múltiplo de num2 o viceversa.
 	// Ejemplo: esMultiplo(10, 5) → true, esMultiplo(7, 3) → false
 	// Tu código:
+	return num1 % num2 === 0 || num2 % num1 === 0;
+	
 }
 
 // Test 9:
@@ -148,7 +150,7 @@ function obtenerEstacion(mes) {
 	// - Septiembre, Octubre, Noviembre → "Otoño"
 	// Si el mes no es válido, devuelve "Mes inválido"
 	// Tu código:
-	
+
 }
 
 // Test 10:
