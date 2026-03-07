@@ -194,6 +194,9 @@ function esPalabraPalindroma(palabra) {
 	// y de derecha a izquierda (ignora mayúsculas/minúsculas).
 	// Ejemplo: "reconocer" → true, "hola" → false, "Ana" → true
 	// Tu código:
+	palabra = palabra.toLowerCase();
+	let invertida = palabra.split("").reverse().join("")
+	return palabra === invertida;
 }
 
 // Test 12:
