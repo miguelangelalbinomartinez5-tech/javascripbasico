@@ -206,6 +206,13 @@ function contarVocales(texto) {
 	// No distingue entre mayúsculas y minúsculas.
 	// Ejemplo: contarVocales("Hola Mundo") → 4
 	// Tu código:
+	const vocales = "aeiou";
+	contador = 0;
+	for (let char of texto.toLowerCase()){
+		if (vocales.includes(char)) contador++;
+
+	}
+	return contador;
 }
 
 // Test 13:
@@ -217,8 +224,14 @@ function formatearNombre(nombre, apellido, mayusculas) {
 	// Ejemplo: formatearNombre("juan", "perez", true) → "JUAN PEREZ"
 	// Ejemplo: formatearNombre("juan", "perez", false) → "Juan Perez"
 	// Tu código:
+	 {
+	if (mayusculas) {
+		return `${nombre.toUpperCase()} ${apellido.toUpperCase()}`;
+	}
+	const capitalizar = (str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+	return `${capitalizar(nombre)} ${capitalizar(apellido)}`;
 }
-
+}
 // ██████  BUCLES BÁSICOS ████████████████████████
 
 // Test 14:
