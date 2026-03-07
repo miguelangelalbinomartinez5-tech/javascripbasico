@@ -269,7 +269,13 @@ function factorial(n) {
 	// Ejemplo: factorial(5) → 5×4×3×2×1 = 120
 	// Nota: factorial(0) = 1 por definición.
 	// Usa un bucle for o while.
-	// Tu código:
+	// Tu código: 
+	if (n === 0 || n === 1) return 1;
+	let resultado = 1; 
+	for ( let i = 2; i <= n; i++) {
+		resultado *= i;
+	}
+	return resultado;
 }
 
 // Test 17:
@@ -278,6 +284,7 @@ function buscarNumero(array, objetivo) {
 	// Devuelve true si el objetivo está en el array, false en caso contrario.
 	// Usa un bucle for para recorrer el array (no uses .includes()).
 	// Tu código:
+	
 }
 
 // Test 18:
