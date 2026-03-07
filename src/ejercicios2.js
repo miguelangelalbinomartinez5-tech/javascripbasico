@@ -181,6 +181,8 @@ function calcularPropina(total, porcentaje) {
 	// Ejemplo: calcularPropina(100, 15) → 15.00
 	// Pista: Usa toFixed(2) y luego convierte a número si es necesario.
 	// Tu código:
+	const propina = (total * porcentaje) / 100;
+	return Number(propina.toFixed(2));
 }
 
 // ██████  STRINGS Y VALIDACIONES ████████████████████████
