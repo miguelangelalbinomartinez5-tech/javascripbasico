@@ -255,6 +255,11 @@ function obtenerParesHasta(limite) {
 	// Ejemplo: obtenerParesHasta(10) → [0, 2, 4, 6, 8, 10]
 	// Usa un bucle for o while.
 	// Tu código:
+	const pares = [];
+	for (let i = 0; i <= limite; i += 2) {
+		pares.push(i);
+	}
+	return pares;
 }
 
 // Test 16:
